@@ -1,5 +1,14 @@
 def sum(lst, n):
-    # Your code here!
+    i = 0
+    for x in lst:
+        j=0
+        for y in lst:
+            if i == j:
+                continue
+            elif (x + y == n):
+                return True
+            j += 1
+        i += 1
     return False
 
 def test():

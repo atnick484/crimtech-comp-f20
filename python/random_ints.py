@@ -1,8 +1,12 @@
 import random
 
 def random_ints():
-    # Your code here!
     l = []
+    x = random.randint(1, 10)
+    while x != 6:
+        l.append(x)
+        x = random.randint(1, 10)
+    l.append(x)
     return l
 
 def test():

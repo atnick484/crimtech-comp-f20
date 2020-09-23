@@ -1,5 +1,12 @@
 def rm_smallest(d):
-    # Your code here!
+    if len(d) == 1 or len(d) == 0:
+        return d
+    keys = list(d.keys())
+    minKey = keys[0]
+    for x in d:
+        if d[x] < d[minKey]:
+            minKey = x
+    d.pop(minKey)
     return d
 
 def test():
